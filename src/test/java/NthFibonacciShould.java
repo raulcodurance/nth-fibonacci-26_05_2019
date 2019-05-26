@@ -29,4 +29,11 @@ public class NthFibonacciShould {
         Fibonacci fibonacci = new Fibonacci();
         assertThat(fibonacci.generate(2), is("0 1 1"));
     }
+
+    @Test
+    public void return_0_1_1_2_as_string_when_generate_3_th_fibonacci_numbers() {
+
+        Fibonacci fibonacci = new Fibonacci();
+        assertThat(fibonacci.generate(3), is("0 1 1 2"));
+    }
 }

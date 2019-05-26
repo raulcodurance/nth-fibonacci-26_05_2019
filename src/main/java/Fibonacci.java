@@ -6,9 +6,12 @@ public class Fibonacci {
         }else if(nthNumber == 1) {
 
         return "0 1";
-        }else {
+        }else if(nthNumber == 2){
 
             return "0 1 1";
+        }else{
+
+            return "0 1 1 2";
         }
     }
 }
