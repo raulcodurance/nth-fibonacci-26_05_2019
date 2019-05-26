@@ -16,4 +16,12 @@ public class NthFibonacciShould {
         Fibonacci fibonacci = new Fibonacci();
         assertThat(fibonacci.generate(0), is("0"));
     }
+
+
+    @Test
+    public void return_0_1_as_string_when_generate_1_th_fibonacci_numbers() {
+
+        Fibonacci fibonacci = new Fibonacci();
+        assertThat(fibonacci.generate(1), is("0 1"));
+    }
 }

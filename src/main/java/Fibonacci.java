@@ -1,6 +1,11 @@
 public class Fibonacci {
     public String generate(int nthNumber) {
 
-        return "0";
+        if(nthNumber == 0){
+            return "0";
+        }else {
+
+        return "0 1";
+        }
     }
 }
