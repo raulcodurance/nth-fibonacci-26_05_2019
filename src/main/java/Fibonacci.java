@@ -3,9 +3,12 @@ public class Fibonacci {
 
         if(nthNumber == 0){
             return "0";
-        }else {
+        }else if(nthNumber == 1) {
 
         return "0 1";
+        }else {
+
+            return "0 1 1";
         }
     }
 }

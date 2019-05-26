@@ -1,7 +1,5 @@
 import org.junit.Test;
 
-import java.util.stream.IntStream;
-
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -23,5 +21,12 @@ public class NthFibonacciShould {
 
         Fibonacci fibonacci = new Fibonacci();
         assertThat(fibonacci.generate(1), is("0 1"));
+    }
+
+    @Test
+    public void return_0_1_1_as_string_when_generate_2_th_fibonacci_numbers() {
+
+        Fibonacci fibonacci = new Fibonacci();
+        assertThat(fibonacci.generate(2), is("0 1 1"));
     }
 }
